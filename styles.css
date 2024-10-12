@@ -1,0 +1,91 @@
+/* Minimal CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Use a default font */
+    line-height: 1.5; /* Improve readability */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    background-image: url('./assets/Argentina-GettyImages-1146497849.webp'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(44, 44, 44), rgba(255, 255, 255, 0));
+}
+
+.header h2 {
+    color: white; 
+}
+
+/* Reset styles for the nav list */
+.nav-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;      /* Remove default padding */
+    margin: 0;       /* Remove default margin */
+    display: flex;   /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    
+  }
+  
+  .nav-list li {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  .nav-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;         /* Link color */
+    padding: 15px 20px;  /* Space around links */
+    display: block;       /* Make the entire area clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-list a:hover {
+    background-color: #555; /* Change background on hover */
+  }
+
+  .search-container {
+    display: flex; /* Align items in a row */
+    border: 2px solid gray; /* Border around the search field */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow from buttons */
+    background-color: white;
+}
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove default border */
+    flex: 1; /* Allow the input to take the available space */
+    outline: none; /* Remove outline on focus */
+}
+
+.search-button, .clear-button {
+    padding: 5px 10px; /* Small padding for buttons */
+    font-size: 14px; /* Smaller font size */
+    border: none; /* Remove default border */
+    background-color: gray; /* Blue background for search button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin: 5px; /* Margin to separate buttons from the edges */
+}
+
+.clear-button {
+    background-color: gray; /* Red background for clear button */
+}
+
+.search-button:hover {
+    background-color: darkgray; /* Darker blue on hover */
+}
+
+.clear-button:hover {
+    background-color: darkgray; /* Darker red on hover */
+}
