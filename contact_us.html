@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/ccefe6dd4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="header">
+        <div class="header-h2">
             <i class="fa fa-plane" id="nav-icon"></i>
             <h2>TravelBloom</h2>
         </div>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="./travel_recommendation.html">Home</a></li>
                 <li><a href="./about_us.html">About Us</a></li>
                 <li><a href="./contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div>
-            <input type="text" id="nav-input-id" placeholder="Enter a destination or a keyword">
-            <button id="nav-search-btn">Search</button>
-            <button id="nav-clear-btn">Clear</button>
+        <div class="search-container">
+            <input type="text" class="search-input" id="nav-input-id" placeholder="Enter a destination or a keyword">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <button id="nav-search-btn" class="search-button">Search</button>
+            <button id="nav-clear-btn" class="clear-button">Clear</button>
         </div>
     </header>
-    <main>
+    <main class="main-container">
         <div class="social-media-main">
             <div class="vertical-line">
             </div>
@@ -40,11 +44,11 @@
             <p>Get in touch</p>
         </div>
         <div class="contact-form">
-            <p>Name</p>
-            <input class="contact-form-input" type="text" placeholder="Enter your name">
-            <p>Email</p>
-            <input class="contact-form-input" type="text" placeholder="Enter your email">
-            <p>Message</p>
+            <label for="name">Name</label>
+            <input id="name" class="contact-form-input" type="text" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input id="email" class="contact-form-input" type="email" placeholder="Enter your email">
+            <label for="contact-msg">Message</label>
             <textarea class="contact-form-input" type="text" placeholder="Email your message" id="contact-msg"></textarea>
             <button id="contact-btn">Submit</button>
         </div>

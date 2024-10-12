@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <title>Travel Recommendation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/ccefe6dd4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header-h2">
             <i class="fa fa-plane" id="nav-icon"></i>
             <h2>TravelBloom</h2>
         </div>
@@ -23,11 +24,12 @@
         </nav>
         <div class="search-container">
             <input type="text" class="search-input" id="nav-input-id" placeholder="Enter a destination or a keyword">
+            <i class="fa fa-search" aria-hidden="true"></i>
             <button id="nav-search-btn" class="search-button">Search</button>
             <button id="nav-clear-btn" class="clear-button">Clear</button>
         </div>
     </header>
-    <main>
+    <main class="main-container">
         <div class="social-media-main">
             <div class="vertical-line">
             </div>
@@ -39,12 +41,13 @@
             </div>
         </div>
         <div class="page-intro">
-            <h1 id="intro-title">EXPLORE <br> DREAM <br> DESTINATIONS</h1>
+            <h1 id="intro-title" class="intro-title">EXPLORE <br> DREAM <br> DESTINATIONS</h1>
             <p id="intro-desc"> It encourages exploration of unfamiliar<br> territories, embracing diverse cultures and<br> landscapes, while pursuing the desired<br> destination that captivates the heart and<br> ignites a sense of wonder.</p>
             <button id="book-now-btn">BOOK NOW</button>
         </div>
         <div class="search-result" id="search-result-id">
         </div>
     </main>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>

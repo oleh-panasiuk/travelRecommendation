@@ -22,8 +22,16 @@ body {
     background: linear-gradient(to right, rgb(44, 44, 44), rgba(255, 255, 255, 0));
 }
 
-.header h2 {
-    color: white; 
+.header-h2 {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    color: white;
+    margin-left: 20px;
+}
+
+.header-h2 h2 {
+    margin-left: 20px;
 }
 
 /* Reset styles for the nav list */
@@ -49,16 +57,25 @@ body {
   }
   
   .nav-list a:hover {
-    background-color: #555; /* Change background on hover */
+    color: white;
+    background: linear-gradient(to bottom, rgb(127, 127, 127), rgba(255, 255, 255, 0));
   }
 
   .search-container {
-    display: flex; /* Align items in a row */
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
     border: 2px solid gray; /* Border around the search field */
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 25px; /* Rounded corners */
     overflow: hidden; /* Prevents overflow from buttons */
     background-color: white;
+    margin-right: 20px;
 }
+
+.fa-search {
+    color: gray;
+}
+
 .search-input {
     padding: 10px;
     font-size: 16px;
@@ -68,10 +85,11 @@ body {
 }
 
 .search-button, .clear-button {
+    border-radius: 25px;
     padding: 5px 10px; /* Small padding for buttons */
     font-size: 14px; /* Smaller font size */
     border: none; /* Remove default border */
-    background-color: gray; /* Blue background for search button */
+    background-color: darkgray; /* Blue background for search button */
     color: white; /* White text */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth transition */
@@ -79,13 +97,169 @@ body {
 }
 
 .clear-button {
-    background-color: gray; /* Red background for clear button */
+    background-color: darkgray; /* Red background for clear button */
 }
 
 .search-button:hover {
-    background-color: darkgray; /* Darker blue on hover */
+    background-color: gray; /* Darker blue on hover */
 }
 
 .clear-button:hover {
-    background-color: darkgray; /* Darker red on hover */
+    background-color: gray; /* Darker red on hover */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space between sections */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px; /* Optional padding around the container */
+    background: linear-gradient(to right, rgb(127, 127, 127), rgba(255, 255, 255, 0));
+}
+
+.page-intro, .search-result, .contact-us, .contact-form {
+    flex: 1; /* Grow to fill available space */
+    margin: 10px; /* Space between sections */
+    padding: 20px;
+}
+
+.social-media-main {
+    flex: 0 0 100px; /* Fixed width for the small section */
+    margin: 10px; /* Space between sections */
+    padding: 20px; /* Background color for visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.social-media-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-line {
+    width: 2px; /* Width of the vertical line */
+    height: 323px;
+    background-color: white; /* Color of the vertical line */
+    margin-bottom: 70px;
+}
+
+.fa {
+    color: white;
+}
+
+.social-media-btn {
+    margin-top: 30px;
+}
+
+.page-intro {
+    color: white;
+}
+
+.intro-title {
+    font-size: 50px;
+}
+
+#book-now-btn {
+    border-radius: 25px;
+    padding: 5px 10px; /* Small padding for buttons */
+    font-size: 14px; /* Smaller font size */
+    border: none; /* Remove default border */
+    background-color: darkgray; /* Blue background for search button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin: 5px; /* Margin to separate buttons from the edges */
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+#book-now-btn:hover {
+    background-color: gray; /* Darker blue on hover */
+}
+
+.contact-us {
+    padding-top: 150px;
+    color: white;
+}
+
+#intro-title {
+    font-size: 50px;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.6); /* Light background with transparency */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.contact-form > label {
+    padding-top: 20px;
+}
+
+#contact-btn {
+    border-radius: 25px;
+    padding: 5px 10px; /* Small padding for buttons */
+    font-size: 14px; /* Smaller font size */
+    border: none; /* Remove default border */
+    background-color: darkgray; /* Blue background for search button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin: 5px; /* Margin to separate buttons from the edges */
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+#contact-btn:hover {
+    background-color: gray;
+}
+
+#intro-title {
+    font-size: 50px;
+    color: white;
+}
+
+#about-us-desc {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+}
+
+.team-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-details-desc {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+}
+
+#team-title {
+    flex: 1;
+    align-content: center;
+    color: white;
+}
+
+.team-card > button {
+    border-radius: 25px;
+    padding: 5px 10px; /* Small padding for buttons */
+    font-size: 14px; /* Smaller font size */
+    border: none; /* Remove default border */
+    background-color: darkgray; /* Blue background for search button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin: 5px; /* Margin to separate buttons from the edges */
 }
